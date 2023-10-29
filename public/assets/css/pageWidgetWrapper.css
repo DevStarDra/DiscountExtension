@@ -1,0 +1,88 @@
+@keyframes discountdash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
+
+.bold {
+    font-weight: bold
+}
+
+.p10 {
+    padding: 10px;
+}
+
+#see-offers img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+#see-offers {
+    align-items: center;
+    display: flex !important;
+    position: relative;
+}
+
+#see-offers div {
+    color: #333;
+    align-items: flex-start;
+    width: calc(100% - 30px);
+    padding: 4px 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+#see-offers div span {
+    margin: 0 4px;
+}
+
+.underline {
+    text-decoration: underline
+}
+
+#onPageWidgetWrapper {
+    clear: both;
+    border-radius: 5px;
+    background: #f4f9f2;
+
+    background: linear-gradient(90deg, #66a24d 50%, transparent 50%),
+        linear-gradient(90deg, #66a24d 50%, transparent 50%),
+        linear-gradient(0deg, #66a24d 50%, transparent 50%),
+        linear-gradient(0deg, #66a24d 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 2px, 16px 2px, 2px 16px, 2px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    background-color: #f4f9f2 !important;
+
+    margin: 10px 0;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+#onPageWidgetWrapper:hover {
+
+    background: linear-gradient(90deg, #2f6618 50%, transparent 50%),
+        linear-gradient(90deg, #2f6618 50%, transparent 50%),
+        linear-gradient(0deg, #2f6618 50%, transparent 50%),
+        linear-gradient(0deg, #2f6618 50%, transparent 50%);
+
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 2px, 16px 2px, 2px 16px, 2px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+
+
+}
+
+
+#see-offers {
+    cursor: pointer;
+    display: block;
+}

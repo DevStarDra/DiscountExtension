@@ -1,0 +1,94 @@
+{
+	"name": "tms-Discount.ro - Cumpara la reducere",
+	"short_name": "Discount.ro",
+	"description": "Cele mai bune preturi si Coduri de Reducere",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"icons": {
+		"16": "assets/logos/logo.png",
+		"48": "assets/logos/logo-48.png",
+		"128": "assets/logos/logo-128.png"
+	},
+	"action": {
+		"default_title": "Discount.ro - Cumpara la reducere",
+		"default_icon": {
+			"16": "assets/logos/logo-gray-16.png",
+			"48": "assets/logos/logo-gray-48.png",
+			"128": "assets/logos/logo-gray-128.png"
+		},
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"service_worker": "serviceWorker.js",
+		"type": "module"
+	},
+	"options_page": "options.html",
+	"content_scripts": [
+		{
+			"matches": [ "*://*/*" ],
+			"js": [ "contentScript.js" ]
+		}
+	],
+	"permissions": [
+		"storage",
+		"tabs",
+		"scripting",
+		"activeTab",
+		"notifications",
+		"identity"
+	],
+	"host_permissions": [ 
+		"http://*/*",
+		"https://*/*",
+		"<all_urls>"
+	],
+	"optional_host_permissions": [
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"assets/logos/*"
+			],
+			"matches": [
+				"*://*/*"
+			]
+		},
+		{
+			"resources": [
+				"assets/images/*"
+			],
+			"matches": [
+				"*://*/*"
+			]
+		},
+		{
+			"resources": [
+				"assets/flags/*"
+			],
+			"matches": [
+				"*://*/*"
+			]
+		},
+		{
+			"resources": [
+				"assets/css/*.css"
+			],
+			"matches": [
+				"*://*/*"
+			]
+		},
+		{
+			"resources": [
+				"assets/js/jquery.js",
+				"assets/js/common.js",
+				"assets/js/sidebar.js"
+			],
+			"matches": [
+				"*://*/*"
+			]
+		}
+	],
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'"
+	}
+}

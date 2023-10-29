@@ -1,0 +1,80 @@
+.coupon-card {
+    background-color: white;
+    /* height: 96px; */
+    width: 180px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-top: 5px;
+    border: 1px solid #eee;
+    box-shadow: rgb(226 226 226 / 60%) 0 7px 10px -5px;
+    cursor: pointer;
+}
+
+.coupon-card img {
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    box-shadow: none;
+}
+
+.coupon-card .coupon-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.coupon-card .coupon-card-detail {
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 4px;
+    margin-top: 4px;
+    height: 30px;
+    word-break: break-word;
+}
+
+.coupon-card .coupon-card-description {
+    font-size: 8px;
+    padding-left: 4px;
+    margin-top: 1px;
+}
+
+.coupon-card-description::before {
+    content: '✓';
+}
+
+.coupon-card .coupon-card-copy-button {
+    border-radius: 5px;
+    height: 30px;
+    width: 160px;
+    background-color: #CC2A36;
+    color: white;
+    font-size: 11px;
+    border: 1px solid #eee;
+    box-shadow: rgb(226 226 226 / 60%) 0 7px 10px -5px;
+    cursor: pointer;
+}
+
+.offer-card {
+    width: 120px; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.offer-card img {
+    width: 120px;
+    height: 95px;
+}
+
+.offer-card-title {
+    font-size: 13px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.offer-card-description {
+    font-size: 10px;
+    color: #CC2A36;
+    user-select: none;
+}

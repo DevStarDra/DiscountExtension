@@ -1,0 +1,127 @@
+@keyframes discountdash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
+
+#discountAlertAutoAParent {
+    border: 1px solid #cc2a36;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+
+#discountAlertAutoAParent:hover {
+    border: 1px solid #236b2c;
+}
+
+.bold {
+    font-weight: bold
+}
+
+.p10 {
+    padding: 10px;
+}
+
+#see-coupons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+#see-coupons {
+    align-items: center;
+    display: flex !important;
+    position: relative;
+}
+
+#see-coupons div {
+    color: #333;
+    line-height: 20px;
+    align-items: flex-start;
+    width: calc(100% - 30px);
+    padding: 4px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+#see-coupons div span {
+    margin: 0 4px;
+}
+
+#discountroAlert {
+    margin: 25px 0 15px;
+    clear: both;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#discountroAlert:hover {
+    overflow: inherit;
+}
+
+
+#discountAlertAutoA:hover {
+    background: #236b2c !important;
+    border: 2px solid #236b2c;
+    animation: dicount-border-dance 4s infinite linear;
+}
+
+#discountAlertAutoA {
+    border: 2px solid #cc2a36;
+    border-radius: 5px;
+    transition: background-color 500ms ease 0s, border-color 500ms ease 0s, color 500ms ease 0s, fill 500ms ease 0s;
+    background: #cc2a36;
+    color: #fff;
+    height: 48px;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.underline {
+    text-decoration: underline
+}
+
+#onPageWidgetWrapperCoupons {
+    clear: both;
+    /*  border: 2px dashed #66a24d; */
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #66a24d 50%, transparent 50%),
+        linear-gradient(90deg, #66a24d 50%, transparent 50%),
+        linear-gradient(0deg, #66a24d 50%, transparent 50%),
+        linear-gradient(0deg, #66a24d 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 2px, 16px 2px, 2px 16px, 2px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    background-color: #f4f9f2 !important;
+    font-size: 1.2em;
+    display: inline-block;
+    position: relative;
+}
+
+#onPageWidgetWrapperCoupons:hover {
+    background: linear-gradient(90deg, #2f6618 50%, transparent 50%),
+        linear-gradient(90deg, #2f6618 50%, transparent 50%),
+        linear-gradient(0deg, #2f6618 50%, transparent 50%),
+        linear-gradient(0deg, #2f6618 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 16px 2px, 16px 2px, 2px 16px, 2px 16px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+}
+
+#see-coupons {
+    cursor: pointer;
+    display: block;
+}

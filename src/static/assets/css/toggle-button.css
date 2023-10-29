@@ -1,0 +1,35 @@
+.toggle-container {
+    width: 35px;
+    background-color: #5b5d5b;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-container-checked {
+    width: 35px;
+    background-color: #1FA72D;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-container .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    left: 3px;
+    background-color: white;
+}
+
+.toggle-container-checked .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    left: 17px;
+    background-color: white;
+}
